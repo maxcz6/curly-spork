@@ -1,0 +1,415 @@
+
+body {
+  margin: 0;
+  margin: 0%;
+  padding: 0%;
+}
+
+
+
+
+@media (max-width: 768px) {
+body {
+  background-size: contain; /* Ajusta la imagen para que quepa dentro del contenedor */
+}
+}
+
+
+  header {
+    background-color: rgb(0, 39, 102, 99%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    align-content:center ;
+    padding: 1rem; /* Ajusta el padding para diferentes tamaños de pantalla */
+    height: 6.5rem;
+    justify-items: normal;
+  }
+  hr{
+    
+    padding: 0px;
+    margin: 0px;
+   background-color: rgb(0, 39, 102, 95%);
+  }
+  .imgg{
+    
+    border: 1px solid #fff;
+    border-radius: 5px 30px 5px 50px;
+    padding: 1px;
+    margin: 1px;
+
+
+  }
+  
+  .logo {
+    flex: 1;
+    padding: 1px;
+   
+  }
+  
+
+  .menu-hg {
+    display: none; /* Ocultamos el botón en pantallas grandes */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+    background-image: url("../iconos/menulg.png"); /* Reemplaza 'tu-imagen.png' con la ruta a tu imagen */
+    background-size: cover; /* Ajusta la imagen para que cubra todo el botón */
+    background-position: center; /* Centra la imagen horizontal y verticalmente */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    width: 50px; /* Ajusta el ancho del botón según el tamaño de la imagen */
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin: 40px;
+}
+
+
+
+  
+  @media (max-width: 1000px) {
+    .menu-hg {
+      display: block;
+      position: absolute;
+      top: 29px;
+      right: 20px;
+      z-index: 999;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column; /* Para apilar los elementos verticalmente */
+      align-items: center; /* Centrar los elementos horizontalmente */
+      padding: 20px;
+      background-color: #0a1258;
+        
+    }
+    .nav-links li {
+      list-style: none;
+      margin: 10px 0;
+      text-align: center;
+    }
+  
+    .nav-links.active {
+      display: block;
+      position: absolute;
+      top: 13%;
+      left: 0;
+      right: 0;
+      background-color: #0e1c6e;
+      text-align: center;
+    }
+  }
+  
+  .bar {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #333;
+    transition: all 0.3s ease-in-out;
+    margin: 4px 0;
+  
+  }
+  
+  .menuhg.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .menuhg.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menuhg.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  span{
+    
+    visibility: hidden;
+
+  }
+
+  nav ul {
+    list-style: none;
+   
+    display: flex;
+    
+    justify-content: space-evenly; /* Centra los elementos horizontalmente */
+  }
+  
+  nav li {
+    margin: 1px 50px; /* Ajusta el margen para controlar el espacio entre elementos */
+   
+  }
+  
+  nav a {
+    text-decoration: none;
+    color:rgb(219, 112, 12) ;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  nav a:hover{
+    color:#79d6e2 ; /* Color al pasar el ratón */
+  }
+
+  
+ 
+button {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  z-index: 2;
+  cursor: pointer;
+  background-color: transparent;
+    
+  }
+ 
+
+
+  /******************************** header *****navbar  > parte 1 background   ********/
+ 
+.parte1{
+  background-image: url(../img/imagen3.jpg);
+  height: 30vh;
+  width: 100%;
+  margin:0px ;
+  padding: 1px;
+  background-size: cover;
+  object-fit: cover; /* O 'contain' según tus necesidades */
+  
+
+}
+.p1{
+  margin-top: 20vh;
+  color: #fff;
+  text-align: left;
+  font-size:1.5em ;
+  margin-bottom: 0px;
+}
+.p2{
+  text-align: left;
+  margin-top: 0px;
+  color: #fff;
+  font-family: cursive;
+  font-size:2.5em ;
+  }
+
+ /*******parte 1 background > parte2 texto e imagen presentacion ****/
+ .parte2 {
+  display: flex;
+  flex-direction: column 2;
+  align-items: center;
+  justify-content: center;
+  height: 40vh; /* Ajusta esta altura según tus necesidades */
+  background-color: rgb(199, 92, 53);
+  font-size:1.8vh ;
+}
+.parte21 {
+  text-align: center;
+  text-overflow: ellipsis;
+
+}
+
+.pre1t {
+  text-align: left;
+  margin-bottom: 20px;
+  margin-left: 1.8vh;
+}
+
+.pre1 {
+  margin-left: 1.8vh;
+  text-align: left;
+  max-width: 80%; /* Limita el ancho del párrafo para evitar que sea demasiado largo */
+}
+
+  .img1{
+    width:30vh ;
+    height: 30vh;
+    margin-right: 2vh;
+    border-radius: 10px 0px 10px 0px;
+  }
+  @media (max-width: 768px) {
+    .parte21 {
+      padding: 10px; /* Riduce lo spazio interno per schermi più piccoli */
+    }
+    .pre1t {
+      font-size: 2.8vh; /* Riduce la dimensione del font del titolo */
+    }
+    .pre1 {
+      font-size: 1.3vh; /* Riduce la dimensione del font del paragrafo */
+    }
+  }
+/****** parte2 texto e imagen presentacion > 3 iconos****/
+
+.iconos3{
+  background-color: #0e1c6e;
+  margin: 0px;
+  padding: 1px;
+  
+}
+.iconos31{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  gap: 20px;
+}
+.icono1{background-color: #0f37e7;
+  height: 20vh;
+  width: 20vh;
+  background-size: cover;
+  object-fit: cover;
+  text-align: center;
+  color: rgb(221, 125, 112);
+  border-radius: 50%;
+ 
+}
+.icono2{background-color: #ca4040;
+  height: 20vh;
+  width: 20vh;
+  background-size: cover;
+  object-fit: cover;
+  text-align: center;
+  color: rgb(26, 202, 50);
+  border-radius: 0%;
+}
+.icono3{background-color: hsl(249, 81%, 50%);
+  height: 20vh;
+  width: 20vh;
+  background-size: cover;
+  object-fit: cover;
+  text-align: center;
+  color: aquamarine;
+  border-radius: 50% 50% 2px 0px ;
+}
+
+/****** 3 iconos>* personas ,profesores***/
+
+.tdeqp {
+  text-align: center;
+  background-color: #c4a577;
+  margin: 0px;
+  padding: 1px;
+
+}
+
+.eqp1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.pj1 {
+  flex: 1 1 10vh;
+  margin: 20px;
+  padding: 0px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.pj1 img {
+  width: 7em;
+  height: 7em;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Media query para telas menores */
+@media (max-width: 768px) {
+  .eqp1 {
+    flex-direction: column 3;
+    align-items: center;
+  }
+}
+h5{
+  text-align: center;
+  padding: 1px;
+  margin: 1px;
+  font-size: 1em;
+}
+h2{
+  text-align: left;
+  margin-left: 1em;
+  font-size: 2em;
+}
+h6{  
+  text-align: center;
+  padding: 1px;
+  margin: 1px;
+
+}
+
+
+
+
+
+
+
+
+  
+
+/*  footer*/
+
+footer {
+  background-color: #404fa5;
+  padding: 20px;
+  color: #fdeddd;
+  text-decoration: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.containerult {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.columnasult {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.cncms{
+  font-size:2em;
+  margin: 1vh;
+}
+.colll{
+  text-align: start;
+  display: block; /* Esto asegura que cada enlace ocupe toda la línea */
+  text-decoration: none; /* Quita la decoración subrayada por defecto */
+  padding: 5px; /* Agrega un poco de espacio entre los enlaces */
+  color: rgb(0, 0, 0);
+}
+.cot{
+  color: #000000;
+}
+.col {
+  flex: 1 1 45%;
+  padding: 10px;
+}
+
+
+
+.iconof{
+  width: 6vh;
+  height: 6vh;
+}
+
+.redes {
+  list-style: none;
+  display: flex;
+}
+
+.redes li {
+  margin-right: 10px;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .columnasult {
+    flex-direction: column;
+  }
+  .col {
+    flex: 1 1 100%;
+  }
+}

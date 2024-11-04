@@ -1,0 +1,320 @@
+
+body {
+  margin: 0;
+  margin: 0%;
+  padding: 0%;
+}
+
+
+
+
+@media (max-width: 768px) {
+body {
+  background-size: contain; /* Ajusta la imagen para que quepa dentro del contenedor */
+}
+}
+
+
+  header {
+    background-color: rgb(0, 39, 102, 99%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    align-content:center ;
+    padding: 1rem; /* Ajusta el padding para diferentes tamaños de pantalla */
+    height: 6.5rem;
+    justify-items: normal;
+  }
+  hr{
+    
+    padding: 0px;
+    margin: 0px;
+   background-color: rgb(0, 39, 102, 95%);
+  }
+  .imgg{
+    
+    border: 1px solid #fff;
+    border-radius: 5px 30px 5px 50px;
+    padding: 1px;
+    margin: 1px;
+
+
+  }
+  
+  .logo {
+    flex: 1;
+    padding: 1px;
+   
+  }
+  
+
+  .menu-hg {
+    display: none; /* Ocultamos el botón en pantallas grandes */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+    background-image: url("../iconos/menulg.png"); /* Reemplaza 'tu-imagen.png' con la ruta a tu imagen */
+    background-size: cover; /* Ajusta la imagen para que cubra todo el botón */
+    background-position: center; /* Centra la imagen horizontal y verticalmente */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    width: 50px; /* Ajusta el ancho del botón según el tamaño de la imagen */
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin: 40px;
+}
+
+
+
+  
+  @media (max-width: 1000px) {
+    .menu-hg {
+      display: block;
+      position: absolute;
+      top: 29px;
+      right: 20px;
+      z-index: 999;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column; /* Para apilar los elementos verticalmente */
+      align-items: center; /* Centrar los elementos horizontalmente */
+      padding: 20px;
+      background-color: #0a1258;
+        
+    }
+    .nav-links li {
+      list-style: none;
+      margin: 10px 0;
+      text-align: center;
+    }
+  
+    .nav-links.active {
+      display: block;
+      position: absolute;
+      top: 13%;
+      left: 0;
+      right: 0;
+      background-color: #0e1c6e;
+      text-align: center;
+    }
+  }
+  
+  .bar {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #333;
+    transition: all 0.3s ease-in-out;
+    margin: 4px 0;
+  
+  }
+  
+  .menuhg.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .menuhg.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menuhg.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  span{
+    
+    visibility: hidden;
+
+  }
+
+  nav ul {
+    list-style: none;
+   
+    display: flex;
+    
+    justify-content: space-evenly; /* Centra los elementos horizontalmente */
+  }
+  
+  nav li {
+    margin: 1px 50px; /* Ajusta el margen para controlar el espacio entre elementos */
+   
+  }
+  
+  nav a {
+    text-decoration: none;
+    color:rgb(219, 112, 12) ;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  nav a:hover{
+    color:#79d6e2 ; /* Color al pasar el ratón */
+  }
+
+  
+ 
+button {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  z-index: 2;
+  cursor: pointer;
+  background-color: transparent;
+    
+  }
+ 
+
+
+  /******************************** header y eslide y butom********< >****      3img***** info********/
+  .parte1{
+    background-image: url(../img/imagen3.jpg);
+    height: 30vh;
+    width: 100%;
+    margin:0px ;
+    padding: 1px;
+    background-size: cover;
+    object-fit: cover;
+    }
+  .p1{
+    margin-top: 20vh;
+    color: #fff;
+    text-align: left;
+    font-size:1.5em ;
+    margin-bottom: 0px;
+  }
+  .p2{
+    text-align: left;
+    margin-top: 0px;
+    color: #fff;
+    font-family: cursive;
+    font-size:2.5em ;
+    }
+     /* 3 img*/
+    .con22{
+      background-color: #404fa5;
+      width: 100%;
+      height:100px;
+      margin: 0%;
+      padding: 1px;
+      text-align: center;
+    }
+    .con2{color: #dd7b63;
+      font-size: 1em;
+      margin-bottom: 1px;
+    }
+    .con21{color: #f06552;
+      font-size: 1.8em;
+      margin-top: 1px;
+    }
+    .container2 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center; /* Centra los elementos verticalmente dentro del contenedor */
+      max-width: 1200px;
+      margin: 0 auto;
+      background-color: #1230db;
+  
+    }
+    
+    .container21 {
+      display: flex;
+      flex-direction: column 3;
+      align-items: center;
+      width: 100%;
+      margin: 3px;
+    }
+    
+    .img22 {
+      width: 40vh;
+      max-width: 320px;
+      min-width: 50px;;
+      margin: 10px;
+      /* Centra la imagen dentro de su contenedor */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 45vh;
+      max-height: 40vh;
+      border-radius: 1px;
+      transition: transform 0.3s ease-in-out; /* Transición de 0.6 segundos al cambiar la transformación */
+    }
+    .img22:hover {
+      transform: scale(1.1);
+      opacity: 0.9; /* Reduce la opacidad al 80% */
+    }
+    
+    @media (max-width: 800px) {
+      /* Para pantallas más pequeñas (por ejemplo, smartphones) */
+      .img22 {
+        width: 80%;
+        max-width: 200px;
+      }
+    }
+  
+  
+
+
+
+  
+
+/*  footer*/
+footer {
+  background-color: #404fa5;
+  padding: 20px;
+  color: #fdeddd;
+}
+
+.containerult {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.columnasult {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.cncms{
+  font-size:2em;
+  margin: 1vh;
+}
+.colll{
+  text-align: start;
+  display: block; /* Esto asegura que cada enlace ocupe toda la línea */
+  text-decoration: none; /* Quita la decoración subrayada por defecto */
+  padding: 1px; /* Agrega un poco de espacio entre los enlaces */
+  color: #f7eae7;
+}
+.cot{
+  color: #000000;
+}
+.col {
+  flex: 1 1 45%;
+  padding: 10px;
+}
+.iconof{
+  width: 6vh;
+  height: 6vh;
+}
+
+.redes {
+  list-style: none;
+  display: flex;
+}
+
+.redes li {
+  margin-right: 10px;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .columnasult {
+    flex-direction: column;
+  }
+  .col {
+    flex: 1 1 100%;
+  }
+}
+                    
